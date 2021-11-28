@@ -5,6 +5,7 @@ import { COLORS } from '../../constants';
 
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
+import { QUERIES } from '../../constants';
 import Icon from '../Icon';
 
 const SuperHeader = () => {
@@ -32,6 +33,10 @@ const Wrapper = styled.div`
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    display: none;
+  }
 `;
 
 const MarketingMessage = styled.span`
