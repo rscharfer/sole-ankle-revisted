@@ -21,18 +21,6 @@ const App = () => {
 
 const Main = styled.main`
   padding: 64px 32px;
-
-  @media ${QUERIES.laptopAndSmaller} {
-    background-color: teal;
-  }
-
-  @media ${QUERIES.tabletAndSmaller} {
-    background-color: fuchsia;
-  }
-
-  @media ${QUERIES.phoneAndSmaller} {
-    background-color: indigo;
-  }
 `;
 
 export default App;
