@@ -16,7 +16,7 @@ const Header = () => {
   // <button onClick={() => setShowMobileMenu(true)}>
 
   return (
-    <header>
+    <HeaderWrapper>
       <SuperHeader />
       <MainHeader>
         <Side>
@@ -45,9 +45,15 @@ const Header = () => {
         isOpen={showMobileMenu}
         onDismiss={() => setShowMobileMenu(false)}
       />
-    </header>
+    </HeaderWrapper>
   );
 };
+
+const HeaderWrapper = styled.header`
+  position: relative;
+  z-index: 1;
+`
+
 
 const MainHeader = styled.div`
   display: flex;
